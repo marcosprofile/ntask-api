@@ -4,7 +4,7 @@ module.exports = app => {
       return callback([
         { title: 'Fazer compras' },
         { title: 'Consertar o PC' },
-      ])
+      ]);
     }
-  }
-}
+  };
+};
