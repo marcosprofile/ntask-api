@@ -7,7 +7,9 @@ app.disable('x-powered-by');
 app.set('json spaces', 4);
 
 consign()
-  .include('models')
+  .include('db.js')
+  .then('models')
+  .then('associations.js')
   .then('middlewares.js')
   .then('routes')
   .then('boot.js')
