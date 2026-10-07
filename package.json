@@ -8,7 +8,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "apidoc": "apidoc -i routes/ -o public/apidoc",
     "test": "set \"NODE_ENV=test\" && mocha test/**/*.js"
+  },
+  "apidoc": {
+    "name": "Documentação – Node Task API",
+    "template": {
+      "forceLanguage": "pt_br"
+    }
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
@@ -22,6 +29,7 @@
     "sqlite3": "^6.0.1"
   },
   "devDependencies": {
+    "apidoc": "^1.2.0",
     "chai": "^6.3.0",
     "mocha": "^12.0.3",
     "supertest": "^7.3.1"
